@@ -31,7 +31,9 @@ public class RecursiveFunctionTest {
 	
 	@Test
 	public void testFibonacci() {
-		
+		assertTrue("Fibonacci 5 is not working", RecursiveFunctions.fibonacci(5) == 5);
+		assertTrue("Fibonacci 5 is not working", RecursiveFunctions.fibonacci(4) == 3);
+		assertTrue("Fibonacci 5 is not working", RecursiveFunctions.fibonacci(0) == 0);
 	}
 	
 

@@ -24,4 +24,13 @@ public class RecursiveFunctions {
 			return A*factorial(A-1);
 			}
 	}
+	
+	public static int fibonacci(int num) {
+		if(num == 0 || num == 1) {
+			return num;
+		}
+		else {
+			return fibonacci(num -1) + fibonacci(num - 2);
+		}
+	}
 }
