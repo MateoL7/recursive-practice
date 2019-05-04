@@ -1,3 +1,4 @@
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 
@@ -36,5 +37,25 @@ public class RecursiveFunctionTest {
 		assertTrue("Fibonacci 5 is not working, the expected answer was 0", RecursiveFunctions.fibonacci(0) == 0);
 	}
 	
+	@Test
+	public void testMix() {
+		String m1 = "ABCD";
+		String m2 = "EFGH";
+		
+		assertTrue("Not working, the expected answer was AEBFCGDH", RecursiveFunctions.mix(m1, m2).equalsIgnoreCase("AEBFCGDH"));
+	}
+	
+	@Test
+	public void testPalindrome() {
+		String m1 = "anitalavalatina";
+		String m2 = "reconocer";
+		String m3 = "Mateo";
+		
+		assertTrue("Not working, the expected answer was true", RecursiveFunctions.palindrome(m1));
+		assertTrue("Not working, the expected answer was true", RecursiveFunctions.palindrome(m2));
+		assertFalse("Not working, the expected answer was false", RecursiveFunctions.palindrome(m3));
+
+		
+	}
 
 }
